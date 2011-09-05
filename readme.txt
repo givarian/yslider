@@ -18,6 +18,8 @@ Official website: <a href="http://www.micc.unifi.it/ferracani/blog/web-applicati
 
 Plugin authors: <a href="http://www.micc.unifi.it/ferracani/blog/" title="Andrea Ferracani website">Andrea Ferracani</a> 
 
+You can have multiple instance of YSlider in each page or post. I'm working on a **pro release** which provides widgets and PHP code instantiation in templates. Contact me!
+
 YSlider automatically displays the first image inside the post or page for each item in the widget and takes care to adapt it to the right width size for the main image and to generate the relative thumbnail in the carousel.
 
 YSlider can display the post excerpt as item content. If the excerpt is not present it also creates for each post a teaser of the text to be visualized from the first 55 words! (To visualize the post excerpt go to posts &gt; edit &gt; screen options &gt; excerpt).
