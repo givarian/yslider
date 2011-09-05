@@ -1,0 +1,62 @@
+/* CSS Document */
+
+#behaviours-settings { margin-top:50px;}
+#content-settings label, #style-settings label, #behaviours-settings label, #css-panel label {width:100px; display:block;}
+#content-settings label.admin-content-check, #behaviours-settings label.admin-style-behaviours-check { display:inline;}
+
+
+#style-settings, #css-panel {float:left;}
+.clearer { clear:both;}
+#css-panel textarea { height:237px; width:750px;}
+
+#css-panel {
+	margin:40px 10px 0 60px;
+}
+
+img.doc-image { float:left; border:1px solid #C6C6C6; margin:0 20px 0 0}
+ul.doc-instructions { list-style-type:circle;}
+
+div.doc-box {margin-top:20px;}
+
+.last {margin-bottom:30px;}
+
+#reset-css {
+	background-attachment: scroll;
+    background-clip: border-box;
+    background-color: #F2F2F2;
+    background-image: url("graphics/white-grad.png");
+    background-origin: padding-box;
+    background-position: left top;
+    background-repeat: repeat-x;
+    background-size: auto auto;
+    text-shadow: 0 1px 0 #FFFFFF;
+	-moz-box-sizing: content-box;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    cursor: pointer;
+    font-size: 11px !important;
+    line-height: 13px;
+    padding-bottom: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    text-decoration: none;
+	border-bottom-color: #BBBBBB;
+    border-left-color: #BBBBBB;
+    border-right-color: #BBBBBB;
+    border-top-color: #BBBBBB;
+    color: #464646; 
+	width:60px; 
+	text-align:center;
+	
+}
