@@ -1,0 +1,41 @@
+<?php
+	// JavaScript Document
+	//Header("content-type: application/x-javascript");
+	echo  	"\n";
+	echo 	'<script>';
+	echo  	"\n";
+	echo	'jQuery(document).ready(function() {';
+	echo  	"\n";
+	echo	'jQuery("#newsslider_'.  $id .'").accessNews({';
+	echo  	"\n";
+	echo	'title : "' . $title . '",';
+	echo  	"\n";
+	echo	'subtitle : "' . $subtitle . '",';
+	echo  	"\n";
+	echo	'imgHeight : "' . $imgHeight . '",';
+	echo  	"\n";
+	echo	'contentHeight : "' . $contentHeight . '",';
+	echo  	"\n";
+	echo	'carouselHeight : "' . (is_numeric($carouselHeight) ? $carouselHeight : '90') . '",';
+	echo  	"\n";
+	echo	'width : "' . $width . '",';
+	echo  	"\n";
+	echo	'speed : "' . $speed . '",';
+	echo  	"\n";
+	echo	'slideBy : "' . $slideby . '",';
+	echo  	"\n";
+	echo	'slideShowInterval : ' . (is_numeric($interval) ? $interval : 5000) . ',';
+	echo  	"\n";
+	echo	'slideShowDelay : ' . (is_numeric($delay) ? $delay : 5000) . ',';
+	echo  	"\n";
+	echo	'autoplay : ' . $autoplay . ',';
+	echo  	"\n";
+	echo	'continuousPaging : ' . $continuous . ',';
+	echo  	"\n";
+	echo	'});';
+	echo  	"\n";
+	echo	'});';
+	echo  	"\n";
+	echo 	'</script>';
+	echo  	"\n";
+?>
