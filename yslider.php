@@ -111,6 +111,7 @@ class YSlider {
 	
 	
 	function initializePlugin($id, $title, $subtitle, $width, $slideby, $speed, $interval, $delay, $continuous, $autoplay, $contentHeight, $imgHeight, $carouselHeight) {
+//echo "initializePlugin width: " . $width;
 		($continuous == "on") ? ($continuous = "true") : ($continuous = "false");
 		($autoplay == "on") ? ($autoplay = "true") : ($autoplay = "false");
 		//echo "AUTOPLAY: " . $autoplay;
@@ -128,7 +129,7 @@ class YSlider {
 	
 	
 	function getPosts($atts) {
-		
+		//echo "getPosts";
 		global $wpdb;
 			
 		extract(shortcode_atts( array(
@@ -146,7 +147,7 @@ class YSlider {
 			'postinterval' => get_option('yccf_postinterval'),
 			'postdelay' => get_option('yccf_postdelay'),
 			'postcontinuous' => get_option('yccf_postcontinuous'),
-			'postrecent' => get_option('yccf_postrecent') ? "on" : "off",
+			'postrecent' => get_option('yccf_postrecent') == "on" ? "on" : "off",
 			'postautoplay' => get_option('yccf_postautoplay'),
       	), $atts ) );
 		
@@ -206,7 +207,7 @@ class YSlider {
 	}
 	
 	function getRecentPosts($atts) {
-		
+		//echo "getRecentPosts";
 		global $wpdb;
 		
 		extract(shortcode_atts( array(
