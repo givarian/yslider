@@ -61,6 +61,11 @@ All the available options:
 	<li>postautoplay="on or off" to allow slider autoplay</li>
 </ul>
 
+== Bug fix ==
+
+* **2011 september 06**: recent post or selected ids check box not working properly fixed
+
+
 == Frequently Asked Questions ==
 
 Please leave a comment at [YSlider official website] ( http://www.micc.unifi.it/ferracani/blog/web-applications/yslider-wordpress-content-slider-plugin "YSlider official website")  if you have any questions, concerns, suggestions or problems.
