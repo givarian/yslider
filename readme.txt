@@ -61,7 +61,7 @@ All the available options:
 	<li>postautoplay="on or off" to allow slider autoplay</li>
 </ul>
 
-== Bug fix ==
+== Changelog ==
 
 * **2011 september 06**: null initialization fixed
 * **2011 september 06**: recent post or selected ids check box not working properly fixed
