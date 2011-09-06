@@ -63,6 +63,7 @@ All the available options:
 
 == Bug fix ==
 
+* **2011 september 06**: null initialization fixed
 * **2011 september 06**: recent post or selected ids check box not working properly fixed
 
 
