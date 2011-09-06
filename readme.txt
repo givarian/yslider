@@ -63,13 +63,13 @@ All the available options:
 
 == Changelog ==
 
-* **2011 september 06**: null initialization fixed
-* **2011 september 06**: recent post or selected ids check box not working properly fixed
-
+= 1.0 =
+* 2011 september 06: null initialization fixed
+* 2011 september 06: recent post or selected ids check box not working properly fixed
 
 == Frequently Asked Questions ==
 
-Please leave a comment at [YSlider official website] ( http://www.micc.unifi.it/ferracani/blog/web-applications/yslider-wordpress-content-slider-plugin "YSlider official website")  if you have any questions, concerns, suggestions or problems.
+Please leave a comment at [YSlider official website] (http://www.micc.unifi.it/ferracani/blog/web-applications/yslider-wordpress-content-slider-plugin "YSlider official website")  if you have any questions, concerns, suggestions or problems.
 
 
 == Screenshots ==
