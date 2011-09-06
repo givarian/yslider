@@ -22,23 +22,7 @@
 			$postsubtitle = get_option('yccf_postsubtitle');
 			$postids = get_option('yccf_postids');
 			$postrecent = get_option('yccf_postrecent');
-			if (!$posttitle) {
-				$posttitle = "Today news";
-				update_option('yccf_posttitle', $posttitle);	
-			}
-			if (!$postsubtitle) {
-				$postsubtitle = "2011 May 04";
-				update_option('yccf_postsubtitle', $postsubtitle);	
-			}  
-			if (!$postids) {
-				$postids = "1,2,3,4,5,6";
-				update_option('yccf_postids', $postids);	
-			}
-			if (!$postrecent) {
-                                //echo "entro in postrecent false e setto on: " . $postrecent;
-				$postrecent = 'on';
-				update_option('yccf_postrecent', $postrecent);
-			}
+			
 			
 		}
 		
