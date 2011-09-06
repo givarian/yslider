@@ -4,7 +4,7 @@
 			$posttitle = $_POST['yccf_posttitle'];
 			$postsubtitle = $_POST['yccf_postsubtitle'];
 			$postids = $_POST['yccf_postids'];
-			$postrecent = $_POST['yccf_postrecent'] ? $_POST['yccf_postrecent'] : false;
+			$postrecent = $_POST['yccf_postrecent'] == "on" ? "on" : "off";
 			
 			update_option('yccf_posttitle', $posttitle);
 			update_option('yccf_postsubtitle', $postsubtitle);
@@ -17,6 +17,7 @@
 			<?php
 		} else {
 			//Normal page display
+                        //echo "Normal page display" . $postrecent;
 			$posttitle = get_option('yccf_posttitle');
 			$postsubtitle = get_option('yccf_postsubtitle');
 			$postids = get_option('yccf_postids');
@@ -34,6 +35,7 @@
 				update_option('yccf_postids', $postids);	
 			}
 			if (!$postrecent) {
+                                //echo "entro in postrecent false e setto on: " . $postrecent;
 				$postrecent = 'on';
 				update_option('yccf_postrecent', $postrecent);
 			}
@@ -52,7 +54,9 @@
 			
 ?>
 <div class="wrap">
-	<?php    echo "<h2>" . __( 'YSlider content configurations parameters', 'yslider-content-config' ) . "</h2>"; ?>
+	<?php    
+//echo $postrecent;
+echo "<h2>" . __( 'YSlider content configurations parameters', 'yslider-content-config' ) . "</h2>"; ?>
 		<form name="yccf_form" method="post" action="<?php echo str_replace( '%7E', '~', $_SERVER['REQUEST_URI']); ?>">
 			<input type="hidden" name="yccf_hidden" value="Y">
 			<?php echo "<h4>" . __( 'Post Settings', 'yccf_settings' ) . "</h4>"; ?>

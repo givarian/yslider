@@ -18,7 +18,7 @@
 			$postcss = $_POST['yccf_postcss'];
 			
 			//echo "DATASENT: autoplay " .  $postautoplay . " continuous " . $postcontinuous;
-			
+			//echo "postwidth: " . $postwidth;
 			
 			update_option('yccf_postwidth', $postwidth);
 			update_option('yccf_postimgheight', $postimgheight);
