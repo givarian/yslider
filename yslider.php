@@ -7,7 +7,6 @@ Version: 1.0
 Author: Andrea Ferracani
 Author URI: http://www.micc.unifi.it/ferracani/ 
 License: GPL
-
 */
 
 class YSlider {
