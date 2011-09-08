@@ -4,7 +4,7 @@ Plugin Name: YSlider
 Plugin URI: http://www.micc.unifi.it/ferracani/blog/web-applications/yslider-wordpress-content-slider-plugin
 Author URI: http://www.micc.unifi.it/ferracani/blog/
 Author: Andrea Ferracani
-Tags: slider, carousel, slideshow, content slider
+Tags: slider, carousel, slideshow, content slider, content, post, posts, page, pages, thmbnail, thumbnails, image, images
 Requires at least: 3.0.0
 Tested up to: 3.2.1
 Stable tag: 1.0
