@@ -17,7 +17,7 @@ Official website: <a href="http://www.micc.unifi.it/ferracani/blog/web-applicati
 
 Plugin authors: <a href="http://www.micc.unifi.it/ferracani/blog/" title="Andrea Ferracani website">Andrea Ferracani</a> 
 
-You can have multiple instance of YSlider in each page or post. I'm working on a **pro release** which provides widgets and PHP code instantiation in templates. Contact me!
+You can have multiple instance of YSlider in each page or post. I'm working on a **pro release** which provides widgets and PHP code instantiation in templates. <a href="mailto:andreaferracani@gmail.com" title="Andrea Ferracani email">Contact me</a>!
 
 YSlider automatically displays the first image inside the post or page for each item in the widget and takes care to adapt it to the right width size for the main image and to generate the relative thumbnail in the carousel.
 
