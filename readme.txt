@@ -63,6 +63,7 @@ All the available options:
 == Changelog ==
 
 = 1.0 =
+* 2011 september 08: options in database removed on plugin deactivation
 * 2011 september 06: null initialization fixed
 * 2011 september 06: recent post or selected ids check box not working properly fixed
 
