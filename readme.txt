@@ -13,8 +13,7 @@ YSlider is a content slider for <a href="http://wordpress.org" title="Wordpress 
 
 == Description ==
 
-Official website: <a href="http://www.micc.unifi.it/ferracani/blog/web-applications/yslider-wordpress-content-slider-plugin" title="YSlider website">YSlider website</a> 
-(If you find a bug please report it here and I will work on it).
+Official website: <a href="http://www.micc.unifi.it/ferracani/blog/web-applications/yslider-wordpress-content-slider-plugin" title="YSlider website">YSlider website</a>(If you find a bug please report it here and I will work on it).
 
 Plugin authors: <a href="http://www.micc.unifi.it/ferracani/blog/" title="Andrea Ferracani website">Andrea Ferracani</a> 
 
@@ -64,6 +63,7 @@ All the available options:
 == Changelog ==
 
 = 1.0 =
+* 2011 september 08: options in database removed on plugin deactivation
 * 2011 september 06: null initialization fixed
 * 2011 september 06: recent post or selected ids check box not working properly fixed
 

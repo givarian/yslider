@@ -9,6 +9,9 @@ Author URI: http://www.micc.unifi.it/ferracani/
 License: GPL
 */
 
+register_deactivation_hook( __FILE__, array( 'YSlider', 'on_deactivate' ) );
+
+
 class YSlider {
 	
 	function YSlider() {
@@ -44,6 +47,28 @@ class YSlider {
 			} 
 		}
 		return true;
+	}
+	
+	function on_deactivate() {
+		//echo "deactivate";
+		
+		delete_option('yccf_posttitle');
+		delete_option('yccf_postsubtitle');
+		delete_option('yccf_postids');
+		delete_option('yccf_postrecent');
+		
+		delete_option('yccf_postwidth'); 
+		delete_option('yccf_postimgheight');  
+		delete_option('yccf_postthumbheight'); 
+		delete_option('yccf_postcontentheight');   
+		delete_option('yccf_postcarouselheight');   
+		delete_option('yccf_postslideby');
+		delete_option('yccf_postspeed');
+		delete_option('yccf_postinterval');
+		delete_option('yccf_postdelay');
+		delete_option('yccf_postcontinuous');
+		delete_option('yccf_postautoplay');
+		delete_option('yccf_postcss');
 	}
 	
 	
