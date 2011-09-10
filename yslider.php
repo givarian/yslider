@@ -324,7 +324,7 @@ class YSlider {
 				
 				
 				#slider-wrapper div.jqans-wrapper.default .jqans-stories li h3 {
-					font-size:12px;
+					font-size:12px !important;
 					color:#59728B !important;
 					line-height:14px !important; 
 	                text-transform:none;
@@ -338,7 +338,7 @@ class YSlider {
 				}
 				
 				#slider-wrapper div.jqans-wrapper.default .jqans-stories li.selected h3 {
-					font-size:12px;
+					font-size:12px !important;
 					color:#FFF !important;
 				}
 				
