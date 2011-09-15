@@ -13,7 +13,7 @@ YSlider is a content slider for <a href="http://wordpress.org" title="Wordpress 
 
 == Description ==
 
-Official website: <a href="http://www.micc.unifi.it/ferracani/blog/web-applications/yslider-wordpress-content-slider-plugin" title="YSlider website">YSlider website</a> - <a href="http://trinity.micc.unifi.it/wdc/student20/?page_id=2" title="online demo">online demo</a>
+Official website: <a href="http://www.micc.unifi.it/ferracani/blog/web-applications/yslider-wordpress-content-slider-plugin" title="YSlider website">YSlider website</a> - <a href="http://trinity.micc.unifi.it/wdc/student20/?page_id=2" title="online demo">online demo</a><br />
 (If you find a bug please report it here and I will work on it).
 
 Plugin authors: <a href="http://www.micc.unifi.it/ferracani/blog/" title="Andrea Ferracani website">Andrea Ferracani</a> 
