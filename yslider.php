@@ -507,7 +507,7 @@ class YSlider {
 			$queryExcerpt = "SELECT post_excerpt FROM wp_posts WHERE ID='" . $postids_array[$i] . "'";
 			$post_excerpt = $wpdb->get_var($queryExcerpt);
 			
-			if ($post_status == "publish" && preg_match('/\[.*\]+/', $post_content) == 0) {
+			if ($post_status == "publish" && preg_match('/\[yslider.*\]+/', $post_content) == 0) {
 				//Get post title
 				$queryTitle = "SELECT post_title FROM wp_posts WHERE ID='" . $postids_array[$i] . "'";
 				$post_title = $wpdb->get_var($queryTitle);
