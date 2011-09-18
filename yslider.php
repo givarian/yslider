@@ -507,7 +507,7 @@ class YSlider {
 			$queryExcerpt = "SELECT post_excerpt FROM wp_posts WHERE ID='" . $postids_array[$i] . "'";
 			$post_excerpt = $wpdb->get_var($queryExcerpt);
 			
-			if ($post_status == "publish" && preg_match('/\[.*\]+/', $post_content) == 0) {
+			if ($post_status == "publish" && preg_match('/\[yslider.*\]+/', $post_content) == 0) {
 				//Get post title
 				$queryTitle = "SELECT post_title FROM wp_posts WHERE ID='" . $postids_array[$i] . "'";
 				$post_title = $wpdb->get_var($queryTitle);
@@ -579,7 +579,7 @@ class YSlider {
 			$queryExcerpt = "SELECT post_excerpt FROM wp_posts WHERE ID='" . $post["ID"] . "'";
 			$post_excerpt = $wpdb->get_var($queryExcerpt);
 			
-			if ($post_status == "publish" && preg_match('/\[.*\]/', $post_content) == 0) {
+			if ($post_status == "publish" && preg_match('/\[yslider.*\]/', $post_content) == 0) {
 				$post_title = $post["post_title"];
 				$post_image = $this -> getPostImage($post_content);
 				$imgWidth = (round((int) $postwidth)) - 8;
