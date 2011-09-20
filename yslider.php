@@ -458,6 +458,7 @@ class YSlider {
 	function getPosts($atts) {
 		//echo "getPosts";
 		global $wpdb;
+		$prefix = $wpdb->prefix;
 			
 		extract(shortcode_atts( array(
 		    'widgetid' => 'default_' . $this -> generateRandom(),
@@ -500,16 +501,16 @@ class YSlider {
 		for ($i=0; $i<$postids_count; $i++) {
 			
 			// check post status
-			$queryStatus = "SELECT post_status FROM wp_posts WHERE ID='" . $postids_array[$i] . "'";
+			$queryStatus = "SELECT post_status FROM " . $prefix . "posts WHERE ID='" . $postids_array[$i] . "'";
 			$post_status = $wpdb->get_var($queryStatus);
-			$queryContent = "SELECT post_content FROM wp_posts WHERE ID='" . $postids_array[$i] . "'";
+			$queryContent = "SELECT post_content FROM " . $prefix . "posts WHERE ID='" . $postids_array[$i] . "'";
 			$post_content = $wpdb->get_var($queryContent);
-			$queryExcerpt = "SELECT post_excerpt FROM wp_posts WHERE ID='" . $postids_array[$i] . "'";
+			$queryExcerpt = "SELECT post_excerpt FROM " . $prefix . "posts WHERE ID='" . $postids_array[$i] . "'";
 			$post_excerpt = $wpdb->get_var($queryExcerpt);
 			
 			if ($post_status == "publish" && preg_match('/\[yslider.*\]+/', $post_content) == 0) {
 				//Get post title
-				$queryTitle = "SELECT post_title FROM wp_posts WHERE ID='" . $postids_array[$i] . "'";
+				$queryTitle = "SELECT post_title FROM " . $prefix . "posts WHERE ID='" . $postids_array[$i] . "'";
 				$post_title = $wpdb->get_var($queryTitle);
 				$post_image = $this -> getPostImage($queryContent);
 				$post_permalink = get_permalink($postids_array[$i]);
@@ -536,6 +537,7 @@ class YSlider {
 	function getRecentPosts($atts) {
 		//echo "getRecentPosts";
 		global $wpdb;
+		$prefix = $wpdb->prefix;
 		
 		extract(shortcode_atts( array(
 		    'widgetid' => 'default_recent_' . $this -> generateRandom(),
@@ -573,13 +575,13 @@ class YSlider {
 		
 		
 		foreach( $recent_posts as $post ){
-			$queryStatus = "SELECT post_status FROM wp_posts WHERE ID='" . $post["ID"] . "'";
+			$queryStatus = "SELECT post_status FROM " . $prefix . "posts WHERE ID='" . $post["ID"] . "'";
 			$post_status = $wpdb->get_var($queryStatus);
 			$post_content = $post["post_content"];
-			$queryExcerpt = "SELECT post_excerpt FROM wp_posts WHERE ID='" . $post["ID"] . "'";
+			$queryExcerpt = "SELECT post_excerpt FROM " . $prefix . "posts WHERE ID='" . $post["ID"] . "'";
 			$post_excerpt = $wpdb->get_var($queryExcerpt);
 			
-			if ($post_status == "publish" && preg_match('/\[yslider.*\]/', $post_content) == 0) {
+			if ($post_status == "publish" && preg_match('/\[.*\]/', $post_content) == 0) {
 				$post_title = $post["post_title"];
 				$post_image = $this -> getPostImage($post_content);
 				$imgWidth = (round((int) $postwidth)) - 8;
