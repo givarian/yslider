@@ -64,6 +64,7 @@ All the available options:
 == Changelog ==
 
 = 1.0 =
+* 2011 september 26: javascript error on instantiation for IE6 and IE7 fixed (thanks to Mark)
 * 2011 september 21: added global variable table prefix for wp database
 * 2011 september 18: post an pages containing image captions not appearing in slider resolved
 * 2011 september 08: options in database removed on plugin deactivation
