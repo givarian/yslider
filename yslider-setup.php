@@ -30,7 +30,7 @@
 	echo  	"\n";
 	echo	'autoplay : ' . $autoplay . ',';
 	echo  	"\n";
-	echo	'continuousPaging : ' . $continuous . ',';
+	echo	'continuousPaging : ' . $continuous;
 	echo  	"\n";
 	echo	'});';
 	echo  	"\n";
