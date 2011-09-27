@@ -61,6 +61,13 @@ All the available options:
 	<li>postautoplay="on or off" to allow slider autoplay</li>
 </ul>
 
+
+
+== Upgrade Notice ==
+
+Security update for vulnerable version of TimThumb library to menage images.
+
+
 == Changelog ==
 
 = 1.0 =
