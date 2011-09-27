@@ -1,0 +1,178 @@
+/* Accessible News Slider : Theme Custom */
+
+
+/* DEFAULT STYLES
+
+div.jqans-wrapper.default a > color of links in post text
+
+ */
+
+div.jqans-wrapper.default a {
+	color:#363636;
+}
+
+
+/* WRAPPER
+
+div.jqans-wrapper.default > color of the top, left, right border background color and text color (useful for changing color to subtitle) of the main wrapper
+
+*/
+
+div.jqans-wrapper.default {
+	border-left: 1px solid #DBE1E6;
+	border-right: 1px solid #DBE1E6;
+	border-top: 1px solid #DBE1E6; 
+	background-color:#FFF; 
+	color:inherit;
+}
+
+/* HEADLINE
+
+div.jqans-wrapper.default .jqans-headline strong > aspect of the widget title ("Today news")
+
+*/
+
+div.jqans-wrapper.default .jqans-headline strong { 
+	text-transform:uppercase;
+}
+
+/* POST CONTENT
+
+div.jqans-wrapper.default .jqans-content h1 > size of post title
+
+div.jqans-wrapper.default .jqans-content h1 a, div.jqans-wrapper.default .jqans-content h1 a:hover, div.jqans-wrapper.default .jqans-content h1 a:active, div.jqans-wrapper.default .jqans-content h1 a:visited > color of post title
+
+div.jqans-wrapper.default .jqans-content p > color of post paragraph
+
+*/
+
+div.jqans-wrapper.default .jqans-content h1 {
+	font-size: 138% !important; 
+}
+
+div.jqans-wrapper.default .jqans-content h1 a, div.jqans-wrapper.default .jqans-content h1 a:hover, div.jqans-wrapper.default .jqans-content h1 a:active, div.jqans-wrapper.default .jqans-content h1 a:visited {
+	color: #16387C !important;
+}
+
+
+div.jqans-wrapper.default .jqans-content p {
+	color: #333 !important;
+}
+
+/* CAROUSEL
+
+div.jqans-wrapper.default .jqans-stories > list border bottom color
+
+div.jqans-wrapper.default .jqans-stories li > carousel item background color, gradient and border top color
+
+div.jqans-wrapper.default .jqans-stories li.selected > carousel item selected background color, gradient and border top color
+
+div.jqans-wrapper.default .jqans-stories li img > carousel item image border and background
+
+div.jqans-wrapper.default .jqans-stories li.selected img > carusel item image border when selected
+
+div.jqans-wrapper.default .jqans-stories li h3 > carousel item paragraph font size, color and line height
+
+div.jqans-wrapper.default .jqans-stories li.selected h3 > carousel item paragraph font size and color when selected
+
+div.jqans-wrapper.default .jqans-stories-selector li.selected div > carousel item arrow color
+
+ */
+ 
+div.jqans-wrapper.default .jqans-stories {
+	border-bottom-color:#DBE1E6; 
+}
+
+div.jqans-wrapper.default .jqans-stories li {
+	background-color:#FCFCFD;
+	background-image:-moz-linear-gradient(center top , #E8EDF0, #FCFCFD);
+	border-top-color:#A8B4BF;
+}
+
+div.jqans-wrapper.default .jqans-stories li.selected {
+	background-color:#59728B;
+    background-image:-moz-linear-gradient(center top , #59728B, #2D4458);
+	border-top-color:#59728B;	
+}
+
+div.jqans-wrapper.default .jqans-stories li img {
+	border: 1px solid #C5CED7;
+	background-color: #fff;
+}
+
+div.jqans-wrapper.default .jqans-stories li.selected img {
+	border: 1px solid #000;
+}
+
+
+div.jqans-wrapper.default .jqans-stories li h3 {
+	font-size:12px;
+	color:#59728B !important;
+	line-height:14px !important;
+}
+
+div.jqans-wrapper.default .jqans-stories li.selected h3 {
+	font-size:12px;
+	color:#FFF !important;
+}
+
+
+div.jqans-wrapper.default .jqans-stories-selector li.selected div {
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #59728B;
+	border-left: 10px solid transparent;
+}
+
+/* PAGINATION
+
+div.jqans-wrapper.default .jqans-pagination > border bottom color and backround of the box containing pagination and slider controls
+
+div.jqans-wrapper.default .jqans-pagination-controls-back a > previous button control color
+
+div.jqans-wrapper.default .jqans-pagination-controls-next a > next button control color
+
+div.jqans-wrapper.default .jqans-pagination-controls-back a span > fake element to make an arrow with pure css: it needs to be the same color as div.jqans-wrapper.default .jqans-pagination background color
+
+div.jqans-wrapper.default .jqans-pagination-controls-next a span > fake element to make an arrow with pure css: it needs to be the same color as div.jqans-wrapper.default .jqans-pagination background color
+
+div.jqans-wrapper.default #control-play > play button color
+
+div.jqans-wrapper.default #pause-left, div.jqans-wrapper.default #pause-right > pause button color
+
+*/
+
+div.jqans-wrapper.default .jqans-pagination {
+	border-bottom-color:#DBE1E6;
+	background-color:#F9FAFA;
+}
+
+
+div.jqans-wrapper.default .jqans-pagination-controls-back a {
+   border-right-color: #59728B;
+}
+
+
+div.jqans-wrapper.default .jqans-pagination-controls-next a {
+    border-left-color: #59728B;
+}
+
+
+
+div.jqans-wrapper.default .jqans-pagination-controls-back a span {
+      border-right-color: #F9FAFA;	/* it needs to be the same color as div.jqans-wrapper.default .jqans-pagination background color*/
+}
+
+div.jqans-wrapper.default .jqans-pagination-controls-next a span {
+     border-left-color: #F9FAFA; /* it needs to be the same color as div.jqans-wrapper.default .jqans-pagination background color*/
+}
+
+
+div.jqans-wrapper.default #control-play  {
+    border-left-color: #59728B; 
+}
+
+
+div.jqans-wrapper.default #pause-left, div.jqans-wrapper.default #pause-right {
+   background: #59728B;
+}
+
