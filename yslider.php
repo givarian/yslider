@@ -521,7 +521,7 @@ class YSlider {
 				$thumbWidth = (round((int) $postwidth / ((int) $postslideby)) - 18);
 				
 				//Build the HTML code
-				$retval .= '<li><a href="' . $post_permalink . '"><img src="' .  WP_PLUGIN_URL. '/yslider/show_image.php?file=' . $post_image . '&amp;width=' . $thumbWidth . '&amp;height=' . $postthumbheight . '" alt="' . $post_title .'" longdesc="' . WP_PLUGIN_URL. '/yslider/show_image.php?file=' . $post_image . '&amp;width=' . $imgWidth . '&amp;height=' . $postimgheight . '"/></a><h3>';
+				$retval .= '<li><a href="' . $post_permalink . '"><img src="' .  WP_PLUGIN_URL. '/yslider/show_image.php?file=' . $post_image . '&amp;width=' . $thumbWidth . '&amp;height=' . $postthumbheight . '&amp;siteurl=' . site_url() . '" alt="' . $post_title .'" longdesc="' . WP_PLUGIN_URL. '/yslider/show_image.php?file=' . $post_image . '&amp;width=' . $imgWidth . '&amp;height=' . $postimgheight . '&amp;siteurl=' . site_url() . '"/></a><h3>';
 				
 				$retval .= $post_title;
 				$retval .= '</h3><p>';
@@ -537,6 +537,8 @@ class YSlider {
 	
 	function getRecentPosts($atts) {
 		//echo "getRecentPosts";
+$upload_dir = wp_upload_dir(); 
+echo $upload_dir['path'];
 		global $wpdb;
 		$prefix = $wpdb->prefix;
 		
@@ -588,7 +590,9 @@ class YSlider {
 				$imgWidth = (round((int) $postwidth)) - 8;
 				$thumbWidth = (round((int) $postwidth / ((int) $postslideby)) - 18);
 				
-				$retval .= '<li><a href="' . get_permalink($post["ID"]) . '"><img src="' .  WP_PLUGIN_URL. '/yslider/show_image.php?file=' . $post_image . '&amp;width=' . $thumbWidth . '&amp;height=' . $postthumbheight . '" alt="' . $post_title .'" longdesc="' . WP_PLUGIN_URL. '/yslider/show_image.php?file=' . $post_image . '&amp;width=' . $imgWidth . '&amp;height=' . $postimgheight . '"/></a><h3>';
+				/*$retval .= '<li><a href="' . get_permalink($post["ID"]) . '"><img src="' .  WP_PLUGIN_URL. '/yslider/show_image.php?file=' . $post_image . '&amp;width=' . $thumbWidth . '&amp;height=' . $postthumbheight . '" alt="' . $post_title .'" longdesc="' . WP_PLUGIN_URL. '/yslider/show_image.php?file=' . $post_image . '&amp;width=' . $imgWidth . '&amp;height=' . $postimgheight . '"/></a><h3>';*/
+
+$retval .= '<li><a href="' . get_permalink($post["ID"]) . '"><img src="' .  WP_PLUGIN_URL. '/yslider/show_image.php?file=' . $post_image . '&amp;width=' . $thumbWidth . '&amp;height=' . $postthumbheight . '&amp;siteurl=' . site_url() . '" alt="' . $post_title .'" longdesc="' . WP_PLUGIN_URL. '/yslider/show_image.php?file=' . $post_image . '&amp;width=' . $imgWidth . '&amp;height=' . $postimgheight . '&amp;siteurl=' . site_url() . '"/></a><h3>';
 				
 				$retval .= $post_title;
 				$retval .= '</h3><p>';
