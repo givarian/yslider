@@ -65,10 +65,14 @@ All the available options:
 
 == Upgrade Notice ==
 
-Security update for vulnerable version of TimThumb library to menage images.
+Version 1.1 - Security update for vulnerable version of library to menage images.
 
 
 == Changelog ==
+
+= 1.1 =
+
+* 2011 september 28: Security update for vulnerable version of library to menage images
 
 = 1.0 =
 * 2011 september 26: javascript error on instantiation for IE6 and IE7 fixed (thanks to Marc)
