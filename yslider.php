@@ -8,7 +8,7 @@ Author: Andrea Ferracani
 Author URI: http://www.micc.unifi.it/ferracani/ 
 License: GPL
 */
-
+//require_once 'resizelib/ThumbLib.inc.php';
 register_deactivation_hook( __FILE__, array( 'YSlider', 'on_deactivate' ) );
 
 
@@ -521,7 +521,8 @@ class YSlider {
 				$thumbWidth = (round((int) $postwidth / ((int) $postslideby)) - 18);
 				
 				//Build the HTML code
-				$retval .= '<li><a href="' . $post_permalink . '"><img src="' .  WP_PLUGIN_URL. '/yslider/timthumb.php?src=' . $post_image . '&amp;w=' . $thumbWidth . '&amp;h='. $postthumbheight . '&amp;zc=1" alt="' . $post_title .'" longdesc="' . WP_PLUGIN_URL. '/yslider/timthumb.php?src=' . $post_image . '&amp;w=' . $imgWidth . '&amp;h=' . $postimgheight . '&amp;zc=1"/></a><h3>';
+				$retval .= '<li><a href="' . $post_permalink . '"><img src="' .  WP_PLUGIN_URL. '/yslider/show_image.php?file=' . $post_image . '&amp;width=' . $thumbWidth . '&amp;height=' . $postthumbheight . '" alt="' . $post_title .'" longdesc="' . WP_PLUGIN_URL. '/yslider/show_image.php?file=' . $post_image . '&amp;width=' . $imgWidth . '&amp;height=' . $postimgheight . '"/></a><h3>';
+				
 				$retval .= $post_title;
 				$retval .= '</h3><p>';
 				$retval .= $post_excerpt ? $post_excerpt : $this -> teaser(strip_tags($post_content));
@@ -586,8 +587,9 @@ class YSlider {
 				$post_image = $this -> getPostImage($post_content);
 				$imgWidth = (round((int) $postwidth)) - 8;
 				$thumbWidth = (round((int) $postwidth / ((int) $postslideby)) - 18);
-				//Build the HTML code
-				$retval .= '<li><a href="' . get_permalink($post["ID"]) . '"><img src="' .  WP_PLUGIN_URL. '/yslider/timthumb.php?src=' . $post_image . '&amp;w=' . $thumbWidth . '&amp;h='. $postthumbheight . '&amp;zc=1" alt="' . $post_title .'" longdesc="' . WP_PLUGIN_URL. '/yslider/timthumb.php?src=' . $post_image . '&amp;w=' . $imgWidth . '&amp;h=' . $postimgheight . '&amp;zc=1"/></a><h3>';
+				
+				$retval .= '<li><a href="' . get_permalink($post["ID"]) . '"><img src="' .  WP_PLUGIN_URL. '/yslider/show_image.php?file=' . $post_image . '&amp;width=' . $thumbWidth . '&amp;height=' . $postthumbheight . '" alt="' . $post_title .'" longdesc="' . WP_PLUGIN_URL. '/yslider/show_image.php?file=' . $post_image . '&amp;width=' . $imgWidth . '&amp;height=' . $postimgheight . '"/></a><h3>';
+				
 				$retval .= $post_title;
 				$retval .= '</h3><p>';
 				$retval .= $post_excerpt ? $post_excerpt : $this -> teaser(strip_tags($post_content));
