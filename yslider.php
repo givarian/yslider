@@ -537,8 +537,7 @@ class YSlider {
 	
 	function getRecentPosts($atts) {
 		//echo "getRecentPosts";
-$upload_dir = wp_upload_dir(); 
-echo $upload_dir['path'];
+
 		global $wpdb;
 		$prefix = $wpdb->prefix;
 		
