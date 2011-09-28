@@ -12,13 +12,17 @@ if ($fileName == null || !file_exists($fileName))
 
 if (!strpos($fileName, $_SERVER['HTTP_HOST'])) return;
 
+
+$urlFile = str_replace($_GET['siteurl'] . '/wp-content/','../../',$fileName);
+
 try
 {
-     $thumb = PhpThumbFactory::create($fileName);
+     $thumb = PhpThumbFactory::create($urlFile);
 }
 catch (Exception $e)
 {
      // handle error here however you'd like
+     return;
 }
 
 $thumb->adaptiveResize($_GET['width'], $_GET['height']);
