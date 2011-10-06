@@ -7,9 +7,8 @@ Version: 1.1
 Author: Andrea Ferracani
 Author URI: http://www.micc.unifi.it/ferracani/ 
 License: GPL
-Stable tag: 1.1
 */
-//require_once 'resizelib/ThumbLib.inc.php';
+
 register_deactivation_hook( __FILE__, array( 'YSlider', 'on_deactivate' ) );
 
 
