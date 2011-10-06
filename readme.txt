@@ -7,7 +7,7 @@ Author: Andrea Ferracani
 Tags: slider, carousel, slideshow, content slider, content, post, posts, page, pages, thmbnail, thumbnails, image, images
 Requires at least: 3.0.0
 Tested up to: 3.2.1
-Stable tag: 1.0
+Stable tag: 1.1
 
 YSlider is a content slider for <a href="http://wordpress.org" title="Wordpress content management system website" target="_blank">Wordpress</a> inspired by the look and feel of one of the coolest widget on the home page of <a href="http://www.yahoo.com" title="Yahoo! Homepage" target="_self">Yahoo!</a>
 

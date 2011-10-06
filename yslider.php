@@ -8,7 +8,7 @@ Author: Andrea Ferracani
 Author URI: http://www.micc.unifi.it/ferracani/ 
 License: GPL
 */
-//require_once 'resizelib/ThumbLib.inc.php';
+
 register_deactivation_hook( __FILE__, array( 'YSlider', 'on_deactivate' ) );
 
 
