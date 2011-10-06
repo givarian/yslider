@@ -3,7 +3,7 @@
 Plugin Name: YSlider
 Plugin URI: http://www.micc.unifi.it/ferracani/blog/web-applications/yslider-wordpress-content-slider-plugin/
 Description: Content slider Wordpress jQuery Plugin with carousel. You can instantiate the slider putting the [yslider] shortcode in pages or posts.
-Version: 1.0
+Version: 1.1
 Author: Andrea Ferracani
 Author URI: http://www.micc.unifi.it/ferracani/ 
 License: GPL
