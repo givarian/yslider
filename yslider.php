@@ -520,7 +520,7 @@ class YSlider {
 				$imgWidth = (round((int) $postwidth)) - 8;
 				$thumbWidth = (round((int) $postwidth / ((int) $postslideby)) - 18);
 				
-				$retval .= '<li><a href="' . $post_permalink . '"><img src="' .  WP_PLUGIN_URL. '/yslider-pro/timthumb.php?src=' . $post_image . '&amp;w=' . $thumbWidth . '&amp;h='. $postthumbheight . '&amp;zc=1" alt="' . $post_title .'" longdesc="' . WP_PLUGIN_URL. '/yslider-pro/timthumb.php?src=' . $post_image . '&amp;w=' . $imgWidth . '&amp;h=' . $postimgheight . '&amp;zc=1"/></a><h3>';
+				$retval .= '<li><a href="' . $post_permalink . '"><img src="' .  WP_PLUGIN_URL. '/yslider/timthumb.php?src=' . $post_image . '&amp;w=' . $thumbWidth . '&amp;h='. $postthumbheight . '&amp;zc=1" alt="' . $post_title .'" longdesc="' . WP_PLUGIN_URL. '/yslider/timthumb.php?src=' . $post_image . '&amp;w=' . $imgWidth . '&amp;h=' . $postimgheight . '&amp;zc=1"/></a><h3>';
 				
 				$retval .= $post_title;
 				$retval .= '</h3><p>';
@@ -588,7 +588,7 @@ class YSlider {
 				$imgWidth = (round((int) $postwidth)) - 8;
 				$thumbWidth = (round((int) $postwidth / ((int) $postslideby)) - 18);
 				
-				$retval .= '<li><a href="' . get_permalink($post["ID"]) . '"><img src="' .  WP_PLUGIN_URL. '/yslider-pro/timthumb.php?src=' . $post_image . '&amp;w=' . $thumbWidth . '&amp;h='. $postthumbheight . '&amp;zc=1" alt="' . $post_title .'" longdesc="' . WP_PLUGIN_URL. '/yslider-pro/timthumb.php?src=' . $post_image . '&amp;w=' . $imgWidth . '&amp;h=' . $postimgheight . '&amp;zc=1"/></a><h3>';
+				$retval .= '<li><a href="' . get_permalink($post["ID"]) . '"><img src="' .  WP_PLUGIN_URL. '/yslider/timthumb.php?src=' . $post_image . '&amp;w=' . $thumbWidth . '&amp;h='. $postthumbheight . '&amp;zc=1" alt="' . $post_title .'" longdesc="' . WP_PLUGIN_URL. '/yslider/timthumb.php?src=' . $post_image . '&amp;w=' . $imgWidth . '&amp;h=' . $postimgheight . '&amp;zc=1"/></a><h3>';
 				
 				$retval .= $post_title;
 				$retval .= '</h3><p>';
