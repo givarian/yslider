@@ -583,7 +583,7 @@ class YSlider {
 			$queryExcerpt = "SELECT post_excerpt FROM " . $prefix . "posts WHERE ID='" . $post["ID"] . "'";
 			$post_excerpt = $wpdb->get_var($queryExcerpt);
 			
-			if ($post_status == "publish" && preg_match('/\[.*\]/', $post_content) == 0) {
+			if ($post_status == "publish" && preg_match('/\[yslider.*\]/', $post_content) == 0) {
 				$post_title = $post["post_title"];
 				$post_image = $this -> getPostImage($post_content);
 				$imgWidth = (round((int) $postwidth)) - 8;
