@@ -525,6 +525,11 @@ class YSlider {
 				
 				$retval .= $post_title;
 				$retval .= '</h3><p>';
+				
+				$pattern = '/\[.*\]+/';
+				$replacement = '';
+				$post_content = preg_replace($pattern, $replacement, $post_content);
+				
 				$retval .= $post_excerpt ? $post_excerpt : $this -> teaser(strip_tags($post_content));
 				$retval .= '</p></li>';
 			}
@@ -595,6 +600,11 @@ $retval .= '<li><a href="' . get_permalink($post["ID"]) . '"><img src="' .  WP_P
 				
 				$retval .= $post_title;
 				$retval .= '</h3><p>';
+				
+				$pattern = '/\[.*\]+/';
+				$replacement = '';
+				$post_content = preg_replace($pattern, $replacement, $post_content);
+				
 				$retval .= $post_excerpt ? $post_excerpt : $this -> teaser(strip_tags($post_content));
 				$retval .= '</p></li>';
 			}
