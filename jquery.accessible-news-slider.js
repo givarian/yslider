@@ -164,6 +164,7 @@
 					// slideshow setup
 					slideshow.init();
 					
+					
 					_this.wrap(this._stories);
 					
 					if (settings.onComplete)
