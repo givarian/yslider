@@ -164,6 +164,14 @@
 					// slideshow setup
 					slideshow.init();
 					
+					$(window)
+						.blur(function(){
+   						slideshow.off();
+					})
+						.focus(function(){
+    					slideshow.on();
+					});
+					
 					_this.wrap(this._stories);
 					
 					if (settings.onComplete)
