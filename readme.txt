@@ -72,6 +72,7 @@ Version 1.1 - Security update for vulnerable version of library to menage images
 
 = 1.1 =
 
+* 2011 october 31: Carousel continuous scrolling after window blur resolved (thanks to Jeremy)
 * 2011 october 07: Removed captions showing in widget when not using excerpts in posts
 * 2011 september 28: Security update for vulnerable version of library to menage images
 
