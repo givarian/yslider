@@ -512,10 +512,18 @@ class YSlider {
 				//Get post title
 				$queryTitle = "SELECT post_title FROM " . $prefix . "posts WHERE ID='" . $postids_array[$i] . "'";
 				$post_title = $wpdb->get_var($queryTitle);
-				$post_image = $this -> getPostImage($queryContent);
+				
+				if (has_post_thumbnail($postids_array[$i])) {
+					$image_attributes = wp_get_attachment_image_src( get_post_thumbnail_id($postids_array[$i]), 'single-post-thumbnail' );
+					$post_image = $image_attributes[0];
+				} else {
+					//$post_image = $this -> getPostImage($queryContent);
+					$post_image = $this -> getPostImage($post_content);
+				}
+				
 				$post_permalink = get_permalink($postids_array[$i]);
 				
-				$post_image = $this -> getPostImage($post_content);
+				
 				
 				$imgWidth = (round((int) $postwidth)) - 8;
 				$thumbWidth = (round((int) $postwidth / ((int) $postslideby)) - 18);
@@ -590,7 +598,16 @@ class YSlider {
 			
 			if ($post_status == "publish" && preg_match('/\[.*\]/', $post_content) == 0) {
 				$post_title = $post["post_title"];
-				$post_image = $this -> getPostImage($post_content);
+				//$post_image = $this -> getPostImage($post_content);
+				
+				if (has_post_thumbnail($post["ID"])) {
+					$image_attributes = wp_get_attachment_image_src( get_post_thumbnail_id($post["ID"]), 'single-post-thumbnail' );
+					$post_image =  $image_attributes[0];
+				} else {
+					//$post_image = $this -> getPostImage($queryContent);
+					$post_image = $this -> getPostImage($post_content);
+				}
+				
 				$imgWidth = (round((int) $postwidth)) - 8;
 				$thumbWidth = (round((int) $postwidth / ((int) $postslideby)) - 18);
 				
@@ -616,6 +633,7 @@ $retval .= '<li><a href="' . get_permalink($post["ID"]) . '"><img src="' .  WP_P
 	}
 	
 	function getPostImage($post_content) {
+		
 		$first_img = '';
 		ob_start();
      	ob_end_clean();
