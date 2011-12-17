@@ -16,7 +16,7 @@
     <p>YSlider is a content slider for wordpress inspired by the look and feel of one of the coolest widget on the home page of <a href="http://www.yahoo.com" title="Yahoo! Homepage" target="_self">Yahoo!</a></p>
    
     
-     <p>YSlider automatically displays the first <strong>image</strong> inside the post or page for each item in the widget and takes care to adapt it to the right width size for the main image and to generate the relative <strong>thumbnail</strong> in the carousel.</p>
+     <p>YSlider automatically displays the featured image associated to a post or, if not set, the first <strong>image</strong> inside the post or page for each item in the widget and takes care to adapt it to the right width size for the main image and to generate the relative <strong>thumbnail</strong> in the carousel.</p>
 	<p>YSlider display the <strong>post excerpt</strong> as item content. If not present it also creates for each post a teaser of the text to be visualized from the first 55 words!.<br /> (To visualize the post excerpt go to <strong>posts > edit > screen options > excerpt</strong>)</p>
     
 	<div class="doc-box">
