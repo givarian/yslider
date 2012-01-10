@@ -72,6 +72,7 @@ Version 1.1 - Security update for vulnerable version of library to menage images
 
 = 1.1 =
 
+* 2012 january 10: added support to themes for post thumbnail function
 * 2011 december 17: added featured image option (if you set a featured image to a post this it is used in the carousel)
 * 2011 october 31: Carousel continuous scrolling after window blur resolved (thanks to Jeremy)
 * 2011 october 07: Removed captions showing in widget when not using excerpts in posts

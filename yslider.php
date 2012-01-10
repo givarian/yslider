@@ -17,6 +17,7 @@ class YSlider {
 	function YSlider() {
 			
 		//WordPress action hooks
+		$this -> addFunctionsSupport();
 		$this -> addHeadFiles();
 		$this -> addCustomStyles();
 		$this -> updateOptions();
@@ -37,6 +38,16 @@ class YSlider {
 		}
 		
 		add_shortcode('yslider', $initArray);
+	}
+	
+	function addFunctionsSupport() {
+		add_action('after_setup_theme', array($this, "addFunctions"));
+	}
+	
+	function addFunctions() {
+		if (!function_exists('has_post_thumbnail')) {
+			add_theme_support('post-thumbnails');
+		}
 	}
 	
     function checkIfIdsNumeric($arr) {
